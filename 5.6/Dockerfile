@@ -5,7 +5,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-configure intl \
-  && docker-php-ext-install intl \
+  && docker-php-ext-install intl
 
 RUN pecl install mongodb-1.1.9
 
