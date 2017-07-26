@@ -1,7 +1,7 @@
 FROM php:5.6
 
 RUN apt-get update \
-  && apt-get install -y zlib1g-dev libicu-dev g++ libcurl4-openssl-dev pkg-config \
+  && apt-get install -y zlib1g-dev libicu-dev g++ libssl-dev pkg-config \
   && rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-configure intl \
