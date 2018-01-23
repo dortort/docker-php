@@ -7,7 +7,7 @@ RUN apt-get update \
 RUN docker-php-ext-configure intl \
   && docker-php-ext-install intl
 
-RUN pecl install mongodb-1.2.11
+RUN pecl install mongodb-1.3.4
 
 RUN echo "extension=mongodb.so" > /usr/local/etc/php/conf.d/mongodb.ini
 
